@@ -14,7 +14,9 @@ public class p2Consumer implements Runnable{
     public void run() {
         try {
             while (true){
-                System.out.println("Consumed resource - Queue size() = " + blockingQueue.size());
+                System.out.println("Thread name: " +Thread.currentThread().getName()+
+                        " Value = " + blockingQueue.getValue()+
+                        " Queue size() = " + blockingQueue.size());
                 blockingQueue.take();
                 Thread.sleep(ThreadLocalRandom.current().nextInt(50, 300));
             }

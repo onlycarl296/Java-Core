@@ -13,7 +13,7 @@ public class p2Main {
 
         Thread thread1 = new Thread(producer1);
         Thread thread2 = new Thread(consumer1);
-        Thread thread3 = new Thread(consumer1);
+        Thread thread3 = new Thread(consunmer2);
 
         thread1.start();
         thread2.start();

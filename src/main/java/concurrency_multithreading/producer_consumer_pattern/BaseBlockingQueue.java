@@ -16,7 +16,7 @@ public class BaseBlockingQueue<T> {
     }
 
     public synchronized T take() throws InterruptedException {
-        while (items.size() == 0) {
+        while (items.isEmpty()) {
             System.out.println("Queue is empty");
             wait();
         }
