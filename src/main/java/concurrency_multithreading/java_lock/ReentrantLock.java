@@ -16,7 +16,6 @@ public class ReentrantLock {
         lockedBy = callingThread;
     }
 
-
     public synchronized void unlock(){
         if(Thread.currentThread() == this.lockedBy){
             lockedCount--;
