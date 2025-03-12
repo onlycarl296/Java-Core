@@ -32,7 +32,7 @@ public class BaseReentrant {
         lock.unlock();
     }
     // Nếu đối với ReentrantLock thì cung cấp tính đồng bộ cho các hàm truy cập tài nguyên chung
-    //ReentrantLock không giới hạn số lần truy cập tài nguyên của một thread.
+    // ReentrantLock không giới hạn số lần truy cập tài nguyên của một thread.
     // Khi một thread truy cập lần đầu vào tài nguyên, nó được gán một biến đếm giá trị 1.
     // Trước khi giải phóng tài nguyên, nó có thể tái truy cập, và mỗi lần như thế thì biến đếm tăng lên 1.
     // Với mỗi yêu cầu unlock, biến đếm sẽ giảm một, và khi biến đếm bằng 0 thì tài nguyên được giải phóng.
