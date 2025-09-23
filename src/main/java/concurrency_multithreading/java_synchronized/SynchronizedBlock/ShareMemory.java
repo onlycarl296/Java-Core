@@ -19,6 +19,8 @@ public class ShareMemory {
 
 /*
  - Với Synchronized methods thời gian chờ giữa các luồng khá lớn vì cả method sẽ được đưa vào monitor để các thread lần lượt sử dụng
+ - Để định nghĩa một synchronized block, sử dụng từ khóa synchronized theo sau bởi một đối tượng được sử dụng làm khóa
+
  - Với Synchronized block cả 3 luông đều đồng thời sử dụng được hàn printData() cùng lúc tuy nhiên khi đến khối synchronized thì chỉ có 1 luồng được sử dụng vòng
    for bên dưới, 2 vòng for còn lại được chia làm 2 trường hợp
         + Nếu chưa chạy đến vòng for bên dưới thì sẽ tiếp tục chạy ở vòng for bên trên

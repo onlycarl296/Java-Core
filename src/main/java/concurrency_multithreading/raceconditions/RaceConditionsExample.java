@@ -20,4 +20,6 @@ public class RaceConditionsExample {
             System.out.println(message + counter.get());
         };
     }
+
+    //Race condition = nhiều thread cùng truy cập & thay đổi tài nguyên chung mà không có đồng bộ → kết quả không lường trước.
 }

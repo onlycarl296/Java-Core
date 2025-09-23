@@ -11,9 +11,12 @@ public class WorkingThread extends Thread {
 
     @Override
     public void run() {
-        for (int i=0; i<=1000;i++){
-            System.out.println(i);
-        }
-        mShareMemory.printData(mThreadName);
+//        for (int i=0; i<=1000;i++){
+//            System.out.println(i);
+//        }
+//        mShareMemory.printData(mThreadName);
+        mShareMemory.increment();
+        System.out.println(mThreadName+" "+mShareMemory.getCount());
+
     }
 }

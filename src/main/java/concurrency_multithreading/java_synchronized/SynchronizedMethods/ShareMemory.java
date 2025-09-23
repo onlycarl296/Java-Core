@@ -1,10 +1,23 @@
 package concurrency_multithreading.java_synchronized.SynchronizedMethods;
 
 public class ShareMemory {
+    private int count = 0;
+
     public synchronized void printData(String threadName) {
         for (int i = 1; i <= 5; i++) {
             System.out.println(threadName + ": " + i);
         }
+    }
+    public synchronized void increment() {
+
+        count++;
+
+    }
+
+    public synchronized int getCount() {
+
+        return count;
+
     }
 }
 
