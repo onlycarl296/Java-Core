@@ -19,6 +19,8 @@ public class A_Note {
     }
 }
 /*
+    Trong Java, lambda expression chỉ được dùng với functional interface.
+
     Lambda Expression (biểu thức Lambda) có thể được định nghĩa là một hàm ẩn danh, cho phép người dùng chuyển các phương thức làm đối số.
     Điều này giúp loại bỏ rất nhiều mã soạn sẵn.
 

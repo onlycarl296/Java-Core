@@ -28,7 +28,8 @@ public class ThreadPool {
     /*
     Khai báo
         - Tạo ra 1 task queue có giơi hạn là 10
-        - Khởi chạy 3 thread với runnable là rỗng (hiện tại taskQueue đang không có gì )
+        - Khởi chạy 3 thread trong thread pool với tham số của cả 3 thread là task queue và thêm cả 3 thread vào list thread
+        - Cho cả 3 thread chạy
      */
 
     public synchronized void execute(Runnable task){
@@ -38,7 +39,8 @@ public class ThreadPool {
     }
     /*
     - Khi sử dụng hàm này thì các task sẽ được nạp vào trong taskQueue
-    - Và khi đó trong 3 thread đang ở trên nếu có thread nào đang ko xử lý gì thì sẽ nhận được task
+    - Và sau khi hàm này chạy xong thì 1  trong 3 thread đang ở trên nếu có thread nào đang ko xử lý gì thì sẽ nhận được task
+    - Và mỗi task lại là 1 runnable -> thứ tự chạy là 1 trong 3 thread trong pool sẽ chạy thread của task
      */
 
     public synchronized void stop(){
