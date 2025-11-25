@@ -2,7 +2,7 @@ package concurrency_multithreading.ForkJoinPool;
 
 public class Note {
 /*
-    ForkJoinPool tương tự như Java ExecutorService nhưng với một sự khác biệt. ForkJoinPool phân chia các tác vụ cho
+    ForkJoinPool tương tự như Java ExecutorService (ThreadPool) nhưng với một sự khác biệt. ForkJoinPool phân chia các tác vụ cho
     các luồng thực thi trong Thread Pool. Framework Fork/ Join sử dụng thuật toán work-stealing. Các luồng sẽ thực thi
     công việc của mình trên một bộ xử lý riêng biệt (thread/ processor), khi làm hết việc của mình, nó lấy bớt (steal)
     các tác vụ từ các luồng khác đang bận rộn.
